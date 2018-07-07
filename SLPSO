@@ -60,13 +60,12 @@ while(gen < maxgen)  % 满足误差精度
     bestp = p(m, :);
     [bestever,id] = min([besty, bestever]);
     best_new = bestever;    % 当前代的最优适应值
-    switch id
-        case 1
-            best_pos = bestp;       % 更新后的最优位置
-            bestpos_new=best_pos;   % 当前代最优位置
-        case 2
-            best_pos = bestpos_old;
-            bestpos_new=best_pos;
+    if id == 1
+        best_pos = bestp;       % 更新后的最优位置
+        bestpos_new=best_pos;   % 当前代最优位置
+    elseif id == 2
+        best_pos = bestpos_old;
+        bestpos_new=best_pos;
     end
     
     error=abs(best_old-best_new);
