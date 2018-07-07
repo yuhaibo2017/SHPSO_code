@@ -8,7 +8,7 @@ H. Yu, Y. Tan, J. Zeng, C. Sun, Y. Jin, Surrogate-assisted hierarchical particle
 This paper and this code should be referenced whenever they are used to generate results for the user's own research. 
 
 This matlab code was written by Haibo Yu:
-School of Mechanical Engineering
+School of Mechanical Engineering,
 Taiyuan University of Science and Technology
 
 Please refer with all questions, comments, bug reports, etc. to tyustyuhaibo@126.com
