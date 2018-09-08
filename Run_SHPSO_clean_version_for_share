@@ -19,7 +19,7 @@ variable_domain; % Test functions' variable domain
 D=30;       % dimension -----> user defined: 30 / 50 / 100 /
 mf=1000;    % maximum number of exact evaluation -----> user defined: 1000(30D,50D,100D) / 8000(30D) /
 % 
-sn1=mf/2;  
+sn1=2;  
 gfs=zeros(1,fix(mf/sn1));   %-------sampling point according to fitness evaluation for ploting the convergence curve
 % 
 pop_size=50;                % population size                
