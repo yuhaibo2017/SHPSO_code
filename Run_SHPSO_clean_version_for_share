@@ -10,7 +10,7 @@
 %% Please refer with all questions, comments, bug reports, etc. to tyustyuhaibo@126.com
 % 
 clear,clc,
-tic;
+time_begin=tic;
 % rand('seed',sum(100*clock));
 warning('off');
 
@@ -102,5 +102,5 @@ title('Griewank Function')
 % title('Ellipsoid Function')
 
 % Time Complexity
-time_cost=toc;
+time_cost=toc(time_begin);
 
