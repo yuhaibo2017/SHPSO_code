@@ -128,10 +128,10 @@ while fitcount < mf
     candidx=find(e < pbestval);
     pos_trmem=pos(e < pbestval, :);                 % e-pbest strategy    
     [~,ih,ip]=intersect(hx,pos_trmem,'rows');
-    if ~isempty(ip)==1
-        candidx(ip)=[];
+    if ~isempty(ip)==1        
         pos_trmem(ip,:)=[];
-        e(ip)=hf(ih);
+        e(candidx(ip))=hf(ih);
+        candidx(ip)=[];
     end
     % Exact evaluate the prescreened candidates
     ssk=size(pos_trmem,1);
